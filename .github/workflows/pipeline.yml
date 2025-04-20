@@ -34,8 +34,10 @@ jobs:
       #  docker build -t $IMAGE_NAME:latest .
       #  docker push $IMAGE_NAME:latest
 
-    - name: Set up Kubeconfig
+    - name: Set up AWS and Kubeconfig
       run: |
+        mkdir -p $HOME/.aws
+        echo "${{ secrets.AWS }}" > $HOME/.aws/credentials
         mkdir -p $HOME/.kube
         echo "${{ secrets.KUBECONFIG }}" > $HOME/.kube/config
 
