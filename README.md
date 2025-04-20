@@ -2,6 +2,10 @@ my-cv-CI-CD-pipeline
 
 install eksctl to be able to create and manage AWS EKS Kubernetes cluster
 
+the create a cluster with the command eksctl create cluster
+
+Then in GitHub, create three secrets: DOCKER_HUB_USERNAME ; DOCKER_HUB_TOKEN and KUBECONFIG which will contain docker username/password and a last variable which will contain .kube/config file content as on below screenshot.
+
 [CI/CD]
 
 on Commit via GitHub
