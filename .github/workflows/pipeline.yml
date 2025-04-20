@@ -27,7 +27,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/cv_site:latest
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/cv_site:latest
       #run: |
       #  docker build -t $IMAGE_NAME:latest .
       #  docker push $IMAGE_NAME:latest
