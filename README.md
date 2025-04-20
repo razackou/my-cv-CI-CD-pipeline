@@ -2,9 +2,11 @@ my-cv-CI-CD-pipeline
 
 install eksctl to be able to create and manage AWS EKS Kubernetes cluster
 
-the create a cluster with the command eksctl create cluster
+then create a cluster with the command eksctl create cluster and check the cluster <add screen0 here>
 
-Then in GitHub, create three secrets: DOCKER_HUB_USERNAME ; DOCKER_HUB_TOKEN and KUBECONFIG which will contain docker username/password and a last variable which will contain .kube/config file content as on below screenshot.
+Do an initial deployment of the application by running kubectl apply -f deployment.yaml Right after, run kubectl get all to get the LoadBalancer link and test it in a web brwoser. Please, add http:// before. It not working, allow few minutes and try again. <add screen1 here>
+
+Then in GitHub, create three secrets: DOCKER_HUB_USERNAME ; DOCKER_HUB_TOKEN and KUBECONFIG which will contain docker username/password and a last variable which will contain .kube/config file content as on below screenshot. <Add screen2 here>
 
 [CI/CD]
 
