@@ -26,8 +26,9 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: .
-        push: true
+        push: true        
         #tags: ${{ secrets.DOCKER_HUB_USERNAME }}/cv_site:latest
+        tags: cv_site razackou/cv_site
       #run: |
       #  docker build -t $IMAGE_NAME:latest .
       #  docker push $IMAGE_NAME:latest
