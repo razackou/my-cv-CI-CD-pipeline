@@ -43,4 +43,4 @@ jobs:
 
     - name: Deploy to Kubernetes
       run: |
-        kubectl set image deployment/your-deployment-name your-container-name=$IMAGE_NAME:latest
+        kubectl set image deployment.apps/my-deployment my-container=$IMAGE_NAME:latest
