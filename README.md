@@ -12,6 +12,7 @@ Technologies used:
 - **Docker/DockerHub**
 - **GitHub Actions**
 - **eksctl**
+- **AWS Application Load Balancer (ALB)**
 - **Amazon Elastic Kubernetes Service (Amazon EKS)**
 
 ## Prerequisites
