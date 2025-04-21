@@ -64,10 +64,19 @@ To deploy this project, you need:
   - create four secrets:
     - DOCKER_HUB_USERNAME 
     - DOCKER_HUB_TOKEN 
-    - AWS               #paste the content of .aws/config file.
-    - KUBECONFIG        #paste the content of .kube/config file.
+    - AWS                *#paste the content of .aws/config file.*
+    - KUBECONFIG         *#paste the content of .kube/config file.*
       ![image](https://github.com/user-attachments/assets/4937751f-c5e8-4bdc-aadb-a64bd1914293)
   - Open Actions tabs, create a new workflow and past the content of `Action.yaml` file. Make suitables changes and commit.
+ 
+5. **Cleaning**
+
+Once done with tests, clear the EKS cluster with the commands:
+   ```bash
+   eksctl get cluster
+   eksctl delete cluster --name=the_cluster_name_got_from_previous_cmmand
+   ```
+![image](https://github.com/user-attachments/assets/dcf9b5de-f129-4369-9278-efefaff6625c)
 
 ## Future Improvements
 - Add code analysis in the Pipeline
